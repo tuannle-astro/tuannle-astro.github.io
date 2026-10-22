@@ -39,12 +39,15 @@
 
 /* Tên ở cột trái */
 .author__name {
-  font-size: 1.5em;          /* to hơn; đổi 1.3em – 1.8em tùy ý */
+  font-size: 1.5em;
 }
-.name-first, .name-last {
-  color: #1f3a5f;            /* xanh đậm */
-}
-.name-mid {
-  color: #8a8a8a;            /* xám nhạt cho chữ đệm */
-  font-weight: normal;
+
+/* Nền sáng */
+.name-first, .name-last { color: #1f3a5f; }   /* xanh đậm */
+.name-mid { color: #8a8a8a; font-weight: normal; }
+
+/* Nền tối */
+html[data-theme="dark"] {
+  .name-first, .name-last { color: #a9c7ec; } /* xanh nhạt */
+  .name-mid { color: #8a8a8a; }
 }
