@@ -36,3 +36,15 @@
     "layout/archive",
     "layout/sidebar"
 ;
+
+/* Tên ở cột trái */
+.author__name {
+  font-size: 1.5em;          /* to hơn; đổi 1.3em – 1.8em tùy ý */
+}
+.name-first, .name-last {
+  color: #1f3a5f;            /* xanh đậm */
+}
+.name-mid {
+  color: #8a8a8a;            /* xám nhạt cho chữ đệm */
+  font-weight: normal;
+}
