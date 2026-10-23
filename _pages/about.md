@@ -47,6 +47,6 @@ I was born and grew up around (12°N, 109°E), on the coast of central Vietnam, 
 <!--
 I truly love science. I strongly believe that scientific thinking, grounded in evidence, data, logic, leads to reliable knowledge and lets us see the world more clearly than dogma, or prejudice.
 -->
-Beyond astrophysics, my interests span the social sciences and literature. If research ever fails to pay the bills, I’ll switch to writing novels—hopefully with better financial luck :> 
+Beyond astrophysics, my interests span the social sciences and literature. If research ever fails to pay the bills, I’ll switch to writing novels - hopefully with better financial luck :> 
 
 

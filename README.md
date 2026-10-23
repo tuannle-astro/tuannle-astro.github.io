@@ -1,4 +1,4 @@
-# Tuan N. Le — Personal Website
+# Tuan N. Le - Personal Website
 
 Source code for my personal academic website: **https://tuannle-astro.github.io**
 
