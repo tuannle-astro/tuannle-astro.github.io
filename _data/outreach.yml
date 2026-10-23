@@ -1,0 +1,66 @@
+# Mỗi sự kiện là một khối bắt đầu bằng "- title:". Trang tự xếp mới nhất lên đầu.
+# image: đặt file ảnh trong images/outreach/
+# role: vai trò của bạn (Host, Organizer, Speaker, Moderator, ...)
+# summary: 1 câu, hiện trên thẻ.
+# abstract: đoạn dài hơn, chỉ hiện khi mở chi tiết. Viết nhiều đoạn thì để dòng trống giữa các đoạn.
+# link: link bài đăng sự kiện (Facebook, website...). Không có thì để "".
+
+- title: "Talkshow: The PhD Application Journey in Astronomy (Session 2)"
+  date: 2026-08-24
+  time: "20:00–22:00 (GMT+7)"
+  venue: "Online (Google Meet)"
+  role: "Host"
+  image: "talkshow-phd-2.jpg"
+  speakers:
+    - name: "Trần Quang Vinh"
+      affil: "PhD student in Astrophysics, California Institute of Technology (Caltech), USA"
+    - name: "Nguyễn Quốc Bảo"
+      affil: "PhD student in Astronomy, Center for Astrophysics | Harvard & Smithsonian, USA"
+  summary: "Practical advice on building an academic profile, publishing papers, and applying to top U.S. astronomy PhD programs from Vietnam."
+  abstract: |
+    Following the first session, two more PhD students shared their paths from Vietnam to astronomy PhD programs in the United States: where to start, how much publications matter, and how to build an application that stands out.
+
+    Open to undergraduates and anyone considering graduate study in astronomy.
+  partners: "USAC · Vietnamese Astronomical Society · Galaxy Dynamics Lab (University of Michigan)"
+  link: ""
+
+- title: "Talkshow: The PhD Application Journey in Astronomy (Session 1)"
+  date: 2026-08-02
+  time: "20:00–22:00 (GMT+7)"
+  venue: "Online (Google Meet)"
+  role: "Host"
+  image: "talkshow-phd-1.jpg"
+  speakers:
+    - name: "Ngô Ngọc Hải"
+      affil: "PhD student in Astronomy & Astrophysics, University of Michigan, USA"
+    - name: "Nguyễn Hữu Thịnh"
+      affil: "PhD student in Astrophysics, University of Illinois Urbana-Champaign, USA"
+  summary: "Two PhD students share their research paths, how they prepared their applications, and what it is like to work in an international academic environment."
+  abstract: |
+    Before starting a career in research, many students face a first question: what do I need to prepare? Two PhD students at U.S. universities shared their research paths, how they prepared their applications, and what daily life looks like in an international academic environment.
+
+    Open to undergraduates and anyone considering graduate study in astronomy.
+  partners: "USAC · Vietnamese Astronomical Society · Galaxy Dynamics Lab (University of Michigan)"
+  link: ""
+
+- title: "Measuring Supermassive Black Hole Masses: Dynamical Studies from the Galaxy Dynamics Lab"
+  date: 2026-09-11
+  time: "8:30–11:30 (GMT+7)"
+  venue: "Seminar “Topics in Cosmology”, Room E404, University of Science, VNUHCM"
+  role: "Speaker"
+  image: "seminar-cosmology-2026-talk.jpeg"
+  poster: "seminar-cosmology-2026-poster.jpeg"
+  speakers:
+    - name: "Dr. Nguyễn Trọng Hiền"
+      affil: "Former lecturer, Caltech; scientist, NASA Jet Propulsion Laboratory (JPL), USA"
+    - name: "Lê Nguyên Tuân"
+      affil: "M.Sc. student, Faculty of Physics & Engineering Physics, University of Science, VNUHCM"
+  summary: "How stellar and gas dynamical models applied to JWST, HST, ALMA and Keck data measure supermassive black hole masses."
+  abstract: |
+    **Full title:** Measuring Supermassive Black Hole Masses and the Galaxy Co-evolution Picture: Dynamical Studies from the Galaxy Dynamics Lab.
+
+    I introduced research at the Galaxy Dynamics Lab (University of Michigan), focusing on how stellar and gas dynamical models are applied to high-resolution data from JWST, HST, ALMA and Keck to measure supermassive black hole masses, and what these measurements tell us about how black holes and their host galaxies evolve together.
+
+    The seminar also featured a talk by Dr. Nguyễn Trọng Hiền on relativity and observational cosmology, followed by an open discussion with students about research directions.
+  partners: "Faculty of Physics & Engineering Physics, University of Science, VNUHCM"
+  link: ""

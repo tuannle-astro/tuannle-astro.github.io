@@ -1,0 +1,114 @@
+---
+layout: archive
+title: "Outreach"
+permalink: /outreach/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>I believe outreach is an essential part of doing science. 
+  Astronomy has the power to shift how people see their place in the universe - 
+  and that perspective should not stay locked inside research papers. 
+  Making these ideas approachable helps more people engage with 
+  evidence-based thinking and the wonder of discovery.</p>
+
+<h2>Events</h2>
+
+{% assign events = site.data.outreach | sort: "date" | reverse %}
+
+<div class="event-grid">
+{% for e in events %}
+  <article class="event-card">
+    {% if e.image and e.image != "" %}
+    <button type="button" class="event-card__img" data-open="event-{{ forloop.index }}" aria-label="Open details: {{ e.title }}">
+      <img src="{{ base_path }}/images/outreach/{{ e.image }}" alt="Poster: {{ e.title }}" loading="lazy">
+    </button>
+    {% endif %}
+    <div class="event-card__body">
+      <p class="event-card__role">{{ e.role }}</p>
+      <h3 class="event-card__title">{{ e.title }}</h3>
+      {% if e.speakers %}
+      <ul class="event-card__speakers">
+        {% for s in e.speakers %}<li><strong>{{ s.name }}</strong></li>{% endfor %}
+      </ul>
+      {% endif %}
+      <p class="event-card__meta">{{ e.date | date: "%b %-d, %Y" }}{% if e.time %} · {{ e.time }}{% endif %}<br>{{ e.venue }}</p>
+      {% if e.summary %}<p class="event-card__summary">{{ e.summary }}</p>{% endif %}
+      <button type="button" class="event-card__more" data-open="event-{{ forloop.index }}">Learn more →</button>
+    </div>
+  </article>
+{% endfor %}
+</div>
+
+{% for e in events %}
+<dialog class="event-modal" id="event-{{ forloop.index }}" aria-labelledby="event-{{ forloop.index }}-title">
+  <div class="event-modal__inner">
+    <header class="event-modal__header">
+      <h2 id="event-{{ forloop.index }}-title">{{ e.title }}</h2>
+      <button type="button" class="event-modal__x" data-close aria-label="Close">×</button>
+    </header>
+    <div class="event-modal__content">
+      {% if e.image and e.image != "" %}
+      {% assign modal_img = e.poster | default: e.image %}
+      <div class="event-modal__poster"><img src="{{ base_path }}/images/outreach/{{ modal_img }}" alt="Poster: {{ e.title }}" loading="lazy"></div>
+      {% endif %}
+      {% if e.speakers %}
+      <p class="event-modal__label">Speakers</p>
+      {% for s in e.speakers %}
+      <p class="event-modal__speaker"><strong>{{ s.name }}</strong><br><span>{{ s.affil }}</span></p>
+      {% endfor %}
+      {% endif %}
+      <p class="event-modal__label">Event details</p>
+      <div class="event-modal__details">
+        <p><strong>Date:</strong> {{ e.date | date: "%b %-d, %Y" }}</p>
+        {% if e.time %}<p><strong>Time:</strong> {{ e.time }}</p>{% endif %}
+        <p><strong>Venue:</strong> {{ e.venue }}</p>
+        <p><strong>My role:</strong> {{ e.role }}</p>
+        {% if e.partners and e.partners != "" %}<p><strong>With:</strong> {{ e.partners }}</p>{% endif %}
+      </div>
+      {% if e.abstract %}
+      <p class="event-modal__label">Abstract</p>
+      <div class="event-modal__abstract">{{ e.abstract | markdownify }}</div>
+      {% endif %}
+      {% if e.link and e.link != "" %}<p><a href="{{ e.link }}">Event page ↗</a></p>{% endif %}
+    </div>
+    <footer class="event-modal__footer">
+      <button type="button" class="event-modal__close" data-close>Close</button>
+    </footer>
+  </div>
+</dialog>
+{% endfor %}
+
+<h2>Mentoring</h2>
+
+<p><strong>Research mentor</strong>, University of Science Astronomy Club (USAC) · 2022 – present<br>
+Each year I guide student teams preparing astronomy research presentations. </p>
+
+<p><strong>Head of content team</strong>, University of Science Astronomy Club (USAC) · 2020 – 2022<br>
+Organised astronomy talks for club members and the public.</p>
+
+<script>
+(function () {
+  var openers = document.querySelectorAll('[data-open]');
+  for (var i = 0; i < openers.length; i++) {
+    openers[i].addEventListener('click', function () {
+      var d = document.getElementById(this.getAttribute('data-open'));
+      if (d && d.showModal) { d.showModal(); }
+    });
+  }
+  var closers = document.querySelectorAll('[data-close]');
+  for (var j = 0; j < closers.length; j++) {
+    closers[j].addEventListener('click', function () {
+      var d = this.closest('dialog');
+      if (d) { d.close(); }
+    });
+  }
+  var dialogs = document.querySelectorAll('.event-modal');
+  for (var k = 0; k < dialogs.length; k++) {
+    dialogs[k].addEventListener('click', function (ev) {
+      if (ev.target === this) { this.close(); }
+    });
+  }
+})();
+</script>

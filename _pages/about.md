@@ -39,7 +39,7 @@ I transitioned into astrophysics from a mechanical engineering background, with 
 
 ## Outreach
 
-I have been part of the [University of Science Astronomy Club (USAC)](https://www.linkedin.com/company/usac-astronomy-club/) since my first year of university. As Head of Content, I organized astronomy talks within the club and brought them to the wider public through workshops and seminars. Today, as the club's research mentor, I guide student teams through their astronomy projects and regularly deliver guest talks.
+I have been part of the [University of Science Astronomy Club (USAC)](https://www.linkedin.com/company/usac-astronomy-club/) since my first year of university. As Head of Content, I organized astronomy talks within the club and brought them to the wider public through workshops and seminars. Today, as the club's research mentor, I guide student teams through their astronomy projects and regularly deliver guest talks. See [Outreach](/outreach/).
 
 ## More about me
 

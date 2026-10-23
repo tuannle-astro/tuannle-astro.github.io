@@ -106,7 +106,7 @@ html[data-theme="dark"] {
 }
 .pub-authors {
   font-size: 0.9em;
-  opacity: 0.8;
+  color: color-mix(in srgb, currentColor 75%, transparent);
 }
 .pub-meta {
   display: flex;
@@ -124,3 +124,199 @@ html[data-theme="dark"] {
   border: 1px solid currentColor;
   padding: 0.1em 0.6em;
 }
+
+/* Tên mình trong danh sách tác giả */
+.pub-authors b {
+  color: #1f3a5f;
+}
+html[data-theme="dark"] .pub-authors b {
+  color: #a9c7ec;
+}
+
+/* ===== Outreach: lưới thẻ sự kiện + cửa sổ chi tiết ===== */
+/* Xóa đoạn "Outreach: lưới thẻ sự kiện" cũ trong main.scss rồi dán đoạn này vào cuối file */
+
+.event-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5em;
+  margin: 1em 0 2.5em;
+}
+.event-card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.event-card__img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: zoom-in;
+}
+.event-card__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.event-card__img:hover img { transform: scale(1.03); }
+.event-card__body {
+  padding: 1em 1.2em 1.2em;
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.event-card__body p { margin: 0 0 0.6em; }
+.event-card__role {
+  align-self: flex-start;
+  font-family: monospace;
+  font-size: 0.8em;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  padding: 0.15em 0.8em;
+  opacity: 0.75;
+}
+.event-card__title {
+  font-size: 1.1em;
+  line-height: 1.35;
+  margin: 0.2em 0 0.6em;
+}
+.event-card__speakers {
+  list-style: none;
+  margin: 0 0 0.6em;
+  padding: 0;
+}
+.event-card__meta { color: color-mix(in srgb, currentColor 70%, transparent); }
+.event-card__summary { line-height: 1.5; }
+.event-card__more {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.event-card__img:focus-visible,
+.event-card__more:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
+
+/* Cửa sổ chi tiết */
+.event-modal {
+  width: min(760px, 92vw);
+  max-height: 88vh;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background: #fbf8f1;
+  color: #222;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+}
+html[data-theme="dark"] .event-modal {
+  background: #161a22;
+  color: #e6e6e6;
+}
+.event-modal::backdrop {
+  background: rgba(0, 0, 0, 0.6);
+}
+.event-modal__inner {
+  display: flex;
+  flex-direction: column;
+  max-height: 88vh;
+}
+.event-modal__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1em;
+  padding: 1.1em 1.4em;
+  border-bottom: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+}
+.event-modal__header h2 {
+  margin: 0;
+  font-size: 1.15em;
+  line-height: 1.35;
+  border: 0;
+}
+.event-modal__x {
+  border: 0;
+  background: none;
+  color: inherit;
+  font-size: 1.8em;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 0.2em;
+}
+.event-modal__content {
+  overflow-y: auto;
+  padding: 1.2em 1.4em;
+  font-size: 0.92em;
+}
+.event-modal__poster {
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+.event-modal__poster img {
+  max-height: 60vh;
+  max-width: 100%;
+  display: inline-block;
+}
+.event-modal__label {
+  font-family: monospace;
+  font-size: 0.8em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin: 1.4em 0 0.6em;
+}
+.event-modal__speaker { margin: 0 0 0.8em; }
+.event-modal__speaker span { color: color-mix(in srgb, currentColor 70%, transparent); }
+.event-modal__details {
+  border: 1px solid color-mix(in srgb, currentColor 18%, transparent);
+  border-radius: 8px;
+  padding: 0.8em 1.1em;
+}
+.event-modal__details p { margin: 0.3em 0; }
+.event-modal__abstract p { line-height: 1.6; }
+.event-modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.9em 1.4em;
+  border-top: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+}
+.event-modal__close {
+  border: 1px solid currentColor;
+  background: none;
+  color: inherit;
+  font: inherit;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  padding: 0.5em 1.4em;
+  border-radius: 6px;
+  cursor: pointer;
+}
+body:has(.event-modal[open]) { overflow: hidden; }
