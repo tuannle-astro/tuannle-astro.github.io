@@ -5,32 +5,42 @@ permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
+<p class="pub-filter-label">Filter by status</p>
+<div class="pub-filter" role="group" aria-label="Filter publications by status">
+  <button type="button" class="pub-filter__btn is-active" data-filter="all" aria-pressed="true">All</button>
+  {% for category in site.publication_category %}
+    {% assign n = site.publications | where: "category", category[0] | size %}
+    {% if n > 0 %}
+      <button type="button" class="pub-filter__btn" data-filter="{{ category[0] }}" aria-pressed="false">{{ category[1].title }}</button>
+    {% endif %}
   {% endfor %}
-{% else %}
+</div>
+
+<div class="pub-list">
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    {% include pub-item.html %}
   {% endfor %}
-{% endif %}
+</div>
 
-
-
+<script>
+(function () {
+  var buttons = document.querySelectorAll('.pub-filter__btn');
+  var items = document.querySelectorAll('.pub-item');
+  for (var i = 0; i < buttons.length; i++) {
+    buttons[i].addEventListener('click', function () {
+      var f = this.getAttribute('data-filter');
+      for (var j = 0; j < buttons.length; j++) {
+        var on = (buttons[j] === this);
+        buttons[j].classList.toggle('is-active', on);
+        buttons[j].setAttribute('aria-pressed', on ? 'true' : 'false');
+      }
+      for (var k = 0; k < items.length; k++) {
+        var show = (f === 'all') || (items[k].getAttribute('data-category') === f);
+        items[k].style.display = show ? '' : 'none';
+      }
+    });
+  }
+})();
+</script>

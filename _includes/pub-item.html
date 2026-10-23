@@ -1,0 +1,12 @@
+{% assign cat_title = site.publication_category[post.category].title | default: post.category %}
+<div class="pub-item" data-category="{{ post.category }}">
+  <p class="pub-title">{{ post.title }}</p>
+  <p class="pub-authors">{{ post.authors }}</p>
+  <p class="pub-meta">
+    <span class="pub-tag">{{ cat_title }}</span>
+    {% if post.venue and post.venue != "" and post.venue != "Submitted" %}<span><i>{{ post.venue }}</i></span>{% endif %}
+    {% if post.category != "submitted" and post.category != "inprep" %}<span>{{ post.date | date: "%Y" }}</span>{% endif %}
+    {% if post.doi and post.doi != "" %}<span><a href="{{ post.doi }}">doi ↗</a></span>{% endif %}
+    {% if post.arxiv and post.arxiv != "" %}<span><a href="https://arxiv.org/abs/{{ post.arxiv }}">arXiv ↗</a></span>{% endif %}
+  </p>
+</div>
