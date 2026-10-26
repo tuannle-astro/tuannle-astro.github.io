@@ -320,3 +320,17 @@ html[data-theme="dark"] .event-modal {
   cursor: pointer;
 }
 body:has(.event-modal[open]) { overflow: hidden; }
+
+
+/* Tóm tắt số bài báo ở đầu trang Publications */
+.pub-stats {
+  border-left: 3px solid color-mix(in srgb, currentColor 35%, transparent);
+  padding: 0.2em 0 0.2em 1em;
+  margin: 0 0 1.8em;
+  font-size: 0.95em;
+}
+.pub-stats p { margin: 0.15em 0; }
+.pub-stats__src {
+  font-size: 0.9em;
+  color: color-mix(in srgb, currentColor 65%, transparent);
+}

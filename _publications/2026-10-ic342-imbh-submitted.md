@@ -4,7 +4,7 @@ collection: publications
 category: submitted
 date: 2026-10-20
 authors: '<b>Tuan N. Le</b>, Dieu D. Nguyen, Mark Durré, Alister W. Graham, Elena Gallo, Hai N. Ngo, Tien H. T. Ho, Tinh Q. T. Le, Thiem Hoang, Igor V. Chilingarian, Roberto Soria, Fan Zou, Huy G. Tong, Nghi K. N. Le, Que T. Le, and Huy M. B. Tran'
-venue: 'Submitted'
+venue: 'Submitted to ApJ'
 doi: ''
 arxiv: ''
 ---

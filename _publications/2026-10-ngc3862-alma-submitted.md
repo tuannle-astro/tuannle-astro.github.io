@@ -4,7 +4,7 @@ collection: publications
 category: submitted
 date: 2026-10-20
 authors: '<b>Tuan N. Le</b>, Dieu D. Nguyen, Hai N. Ngo, Elena Gallo, Tinh Q. T. Le, Tien H. T. Ho, Fan Zou, Que T. Le, Huy G. Tong, and Nghi K. N. Le'
-venue: 'Submitted'
+venue: 'Revised, ApJ'
 doi: ''
 arxiv: ''
 ---
