@@ -20,8 +20,12 @@ author_profile: true
 </div>
 
 <div class="pub-list">
-  {% for post in site.publications reversed %}
-    {% include pub-item.html %}
+  {% assign cat_order = "submitted,manuscripts,inprep,proceedings" | split: "," %}
+  {% for cat in cat_order %}
+    {% assign group = site.publications | where: "category", cat | sort: "date" | reverse %}
+    {% for post in group %}
+      {% include pub-item.html %}
+    {% endfor %}
   {% endfor %}
 </div>
 

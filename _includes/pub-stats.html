@@ -7,7 +7,8 @@
 {% assign me = "<b>Tuan N. Le</b>" %}
 
 {% assign pub_n = 0 %}{% assign pub_first = 0 %}{% assign pub_main = 0 %}
-{% assign pipe_n = 0 %}{% assign pipe_first = 0 %}{% assign pipe_main = 0 %}
+{% assign sub_n = 0 %}{% assign sub_first = 0 %}
+{% assign prep_n = 0 %}{% assign prep_first = 0 %}
 {% assign proc_n = 0 %}
 
 {% for p in site.publications %}
@@ -15,26 +16,29 @@
   {% if p.category == "manuscripts" %}
     {% assign pub_n = pub_n | plus: 1 %}
     {% if lead == me %}{% assign pub_first = pub_first | plus: 1 %}{% elsif p.main_contribution %}{% assign pub_main = pub_main | plus: 1 %}{% endif %}
-  {% elsif p.category == "submitted" or p.category == "inprep" %}
-    {% assign pipe_n = pipe_n | plus: 1 %}
-    {% if lead == me %}{% assign pipe_first = pipe_first | plus: 1 %}{% elsif p.main_contribution %}{% assign pipe_main = pipe_main | plus: 1 %}{% endif %}
+  {% elsif p.category == "submitted" %}
+    {% assign sub_n = sub_n | plus: 1 %}
+    {% if lead == me %}{% assign sub_first = sub_first | plus: 1 %}{% endif %}
+  {% elsif p.category == "inprep" %}
+    {% assign prep_n = prep_n | plus: 1 %}
+    {% if lead == me %}{% assign prep_first = prep_first | plus: 1 %}{% endif %}
   {% elsif p.category == "proceedings" %}
     {% assign proc_n = proc_n | plus: 1 %}
   {% endif %}
 {% endfor %}
 
 {% assign pub_lead = pub_first | plus: pub_main %}
-{% assign pipe_lead = pipe_first | plus: pipe_main %}
 
 <div class="pub-stats">
   <p>
-    <strong>{{ pub_n }}</strong> refereed papers published or accepted
+    <strong>{{ pub_n }}</strong> refereed papers published
     {% if pub_lead > 0 %} · <strong>{{ pub_lead }}</strong> as {% if pub_main > 0 and pub_first > 0 %}first or main-contribution author ({{ pub_first }} as first author){% elsif pub_main > 0 %}main-contribution author{% else %}first author{% endif %}{% endif %}
   </p>
-  {% if pipe_n > 0 %}
+  {% if sub_n > 0 or prep_n > 0 %}
   <p>
-    <strong>{{ pipe_n }}</strong> submitted or in preparation
-    {% if pipe_lead > 0 %} · <strong>{{ pipe_lead }}</strong> as {% if pipe_main > 0 and pipe_first > 0 %}first or main-contribution author ({{ pipe_first }} as first author){% elsif pipe_main > 0 %}main-contribution author{% else %}first author{% endif %}{% endif %}
+    {% if sub_n > 0 %}<strong>{{ sub_n }}</strong> submitted{% if sub_first > 0 %} (<strong>{{ sub_first }}</strong> as first author){% endif %}{% endif %}
+    {% if sub_n > 0 and prep_n > 0 %} · {% endif %}
+    {% if prep_n > 0 %}<strong>{{ prep_n }}</strong> in preparation{% if prep_first > 0 %} (<strong>{{ prep_first }}</strong> as first author){% endif %}{% endif %}
   </p>
   {% endif %}
   {% if proc_n > 0 %}<p><strong>{{ proc_n }}</strong> conference proceedings</p>{% endif %}

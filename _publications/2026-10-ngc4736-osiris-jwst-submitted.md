@@ -3,7 +3,7 @@ title: "Revisiting the Supermassive Black Hole Mass of NGC 4736 Using High Spati
 collection: publications
 category: submitted
 date: 2026-10-26
-authors: 'Hai N. Ngo, Dieu D. Nguyen, Alister Graham, Elena Gallo, Mark Durré, Tinh Q. T. Le, Tien H. T. Ho, and <b>Tuan N. Le</b>'
+authors: 'Hai N. Ngo, Dieu D. Nguyen, Alister W. Graham, Elena Gallo, Mark Durré, Tinh Q. T. Le, Tien H. T. Ho, and <b>Tuan N. Le</b>'
 venue: 'Submitted to ApJ'
 doi: ''
 arxiv: ''

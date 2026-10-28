@@ -1,4 +1,5 @@
 ---
+published: false
 title: "Intermediate-mass Black Hole in Barred Spiral Galaxy Maffei 2"
 collection: publications
 category: inprep
