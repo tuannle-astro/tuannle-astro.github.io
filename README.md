@@ -2,7 +2,7 @@
 
 Source code for my personal academic website: **https://tuannle-astro.github.io**
 
-I'm a graduate student in astrophysics working on black hole mass measurements
+I'm a graduate student working on black hole mass measurements
 and galaxy dynamics.
 
 ---
