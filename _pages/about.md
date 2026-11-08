@@ -35,11 +35,11 @@ My workflow includes some well-known tools: *pPXF*{: style="color: #0f766e;"} to
 
 ## How I got here
 
-I transitioned into astrophysics from a mechanical engineering background, with astronomy as a parallel passion through a student club. In 2022, while still an engineering undergraduate, I met my advisor and gradually shifted from amateur astronomy to professional research on supermassive black hole mass measurement. I later returned to research full-time as a Research Assistant in the [Simons Astrophysics Group at ICISE](https://ifirse.icise.vn/sagi-group.html) in Quy Nhon, Vietnam, and subsequently started an M.Sc. in Theoretical Physics to build the solid physics foundation needed for a long-term research career. Next, I hope to continue this work in a PhD program.
+I transitioned into astrophysics from a mechanical engineering background, with astronomy as a parallel passion through a student club. In 2022, while still an engineering undergraduate, I met my advisor and gradually shifted from amateur astronomy to professional research on supermassive black hole mass measurement. I later returned to research full-time as a Research Assistant in the [Simons Astro-Physics Group at ICISE](https://ifirse.icise.vn/sagi-group.html) in Quy Nhon, Vietnam, and subsequently started an M.Sc. in Theoretical Physics to build the solid physics foundation needed for a long-term research career. Next, I hope to continue this work in a PhD program.
 
 ## Outreach
 
-I have been part of the [University of Science Astronomy Club (USAC)](https://www.linkedin.com/company/usac-astronomy-club/) since my first year of university. As Head of Content, I organized astronomy talks within the club and brought them to the wider public through workshops and seminars. Today, as the club's research mentor, I guide student teams through their astronomy projects and regularly deliver guest talks. See [Outreach](/outreach/).
+I have been part of the [University of Science Astronomy Club (USAC)](https://www.facebook.com/clbusac) since my first year of university. As Head of Content, I organized astronomy talks within the club and brought them to the wider public through workshops and seminars. Today, as the club's research mentor, I guide student teams through their astronomy projects and regularly deliver guest talks. See [Outreach](/outreach/).
 
 ## More about me
 
