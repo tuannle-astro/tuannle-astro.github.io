@@ -26,7 +26,7 @@ We never see a black hole directly in these measurements. What we see is how sta
 
 ## Stellar dynamics {#stellar}
 
-**The idea.** Stars are present in every galaxy, so they are the most general tracer of the central gravity. Close to the black hole, the stars move faster and their orbits change in ways we can measure from the shapes of their absorption lines. To turn those motions into a mass, we need three things: spectra that resolve the black hole's sphere of influence, a model of how much mass the stars themselves contribute, and a dynamical model that links the two. *[Viết lại theo ý bạn: vì sao khó: độ phân giải, M/L, AGN, bụi.]*
+**The idea.** Stars are present in every galaxy, so they are the most general tracer of the central gravity. Close to the black hole, the stars move faster and their orbits change in ways we can measure from the shapes of their absorption lines. To turn those motions into a mass, we need three things: spectra that resolve the black hole's sphere of influence, a model of how much mass the stars themselves contribute, and a dynamical model that links the two.
 
 **The bigger picture.** In the group we apply this approach with JWST/NIRSpec and Keck/OSIRIS adaptive optics to nearby galaxies. One example is NGC 4258, where the stellar-dynamical mass can be checked against the precise maser mass ([Nguyen et al. 2026](https://doi.org/10.3847/1538-4357/ae32f2)). Others include NGC 4736 (Ngo et al., submitted), NGC 5055 (Ho et al., revised) and M87 (Ngo et al., in prep.).
 
@@ -43,7 +43,7 @@ We never see a black hole directly in these measurements. What we see is how sta
 
 ## Molecular-gas dynamics {#gas}
 
-**The idea.** Some galaxies, often massive early-type galaxies, host a thin, cold disk of molecular gas in their centres. Gas in such a disk moves on nearly circular orbits, so its rotation curve traces the enclosed mass more directly than the random motions of stars. ALMA observations of carbon monoxide (CO) lines resolve these disks down to the black hole's sphere of influence. We then forward-model the full data cube. *[Viết lại: điều kiện để dùng được (đĩa đều đặn), ưu/nhược so với sao.]*
+**The idea.** Some galaxies, often massive early-type galaxies, host a thin, cold disk of molecular gas in their centres. Gas in such a disk moves on nearly circular orbits, so its rotation curve traces the enclosed mass more directly than the random motions of stars. ALMA observations of carbon monoxide (CO) lines resolve these disks down to the black hole's sphere of influence. We then forward-model the full data cube.
 
 **The bigger picture.** Because the method relies on fewer assumptions about orbits, it is a valuable cross-check. In NGC 315 the group compared several gas-dynamical methods on the same ALMA data, as a benchmark for how robust these masses are ([Nguyen et al. 2026](https://doi.org/10.3847/1538-4357/aea151)). In NGC 4061 the same technique gives dynamical evidence for a billion-solar-mass black hole ([Nguyen et al. 2026](https://doi.org/10.3847/1538-4357/ae771c)).
 
@@ -60,7 +60,7 @@ We never see a black hole directly in these measurements. What we see is how sta
 
 ## Simulations for the Extremely Large Telescope {#elt}
 
-**The idea.** Today, dynamical black hole masses are limited to fairly nearby galaxies, because the sphere of influence quickly becomes too small to resolve. The 39-m Extremely Large Telescope, with its integral-field spectrograph HARMONI and imager MICADO, will change that. Since the ELT is not yet operating, we test what it will be able to measure with end-to-end mock observations: we simulate the data and then run the same dynamical modelling on them as on real observations. *[Viết lại theo ý bạn.]*
+**The idea.** Today, dynamical black hole masses are limited to fairly nearby galaxies, because the sphere of influence quickly becomes too small to resolve. The 39-m Extremely Large Telescope, with its integral-field spectrograph HARMONI and imager MICADO, will change that. Since the ELT is not yet operating, we test what it will be able to measure with end-to-end mock observations: we simulate the data and then run the same dynamical modelling on them as on real observations.
 
 **The bigger picture.** The group's simulations show that HARMONI can recover intermediate-mass black holes in nuclear star clusters of nearby galaxies ([Nguyen et al. 2025](https://doi.org/10.3847/1538-3881/ade9ba)). They also quantify how the inner light profile of the cluster affects that recovery ([Le, T. Q. T. et al. 2026](https://doi.org/10.3390/universe12060160)). Combining MICADO and HARMONI, spatially resolved supermassive black hole masses can be measured out to 1 ≲ *z* ≲ 2 ([Nguyen et al. 2026](https://doi.org/10.1093/mnras/stag238)).
 
