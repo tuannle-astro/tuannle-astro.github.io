@@ -360,20 +360,20 @@ body:has(.event-modal[open]) { overflow: hidden; }
   object-fit: cover;
   display: block;
 }
-.facility-card figcaption {
-  font-family: inherit;
-  color: inherit;
+.facility-card__caption {
+  margin-top: 0.6em;
   font-size: 0.9em;
-  margin-top: 0.5em;
   line-height: 1.35;
 }
-.facility-card figcaption strong { font-weight: 600; }
-.facility-card__note {
-  font-size: 0.95em;
-  color: color-mix(in srgb, currentColor 75%, transparent);
+.facility-card__caption p { margin: 0 0 0.2em; }
+.facility-card__name { font-weight: 600; }
+.facility-card__inst {
+  font-family: monospace;
+  font-size: 0.85em;
+  letter-spacing: 0.04em;
+  color: color-mix(in srgb, currentColor 70%, transparent);
 }
 .facility-card__credit {
-  font-size: 0.85em;
-  opacity: 0.85;
-  color: color-mix(in srgb, currentColor 60%, transparent);
+  font-size: 0.8em;
+  color: color-mix(in srgb, currentColor 55%, transparent);
 }

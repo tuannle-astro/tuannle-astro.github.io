@@ -70,24 +70,24 @@ We never see a black hole directly in these measurements. What we see is how sta
 
 ## Facilities {#facilities}
 
-Data I have worked with, from space, from the ground, and in simulation.
+Data I have worked with, including space-base, ground-base, and in simulation.
 
 <div class="facility-grid">
 {% for f in site.data.facilities %}
-  <figure class="facility-card">
+  <div class="facility-card">
     <div class="facility-card__img">
       {% if f.image and f.image != "" %}
       <img src="{{ base_path }}/images/facilities/{{ f.image }}" alt="{{ f.name }}" loading="lazy">
       {% else %}
-      <span>{{ f.name }}</span>
+      <span>{{ f.short | default: f.name }}</span>
       {% endif %}
     </div>
-    <figcaption>
-      <strong>{{ f.name }}</strong>{% if f.instrument %} · {{ f.instrument }}{% endif %}
-      {% if f.note %}<br><span class="facility-card__note">{{ f.note }}</span>{% endif %}
-      {% if f.credit %}<br><span class="facility-card__credit">Image: {{ f.credit }}</span>{% endif %}
-    </figcaption>
-  </figure>
+    <div class="facility-card__caption">
+      <p class="facility-card__name">{{ f.name }}{% if f.short and f.short != "" %} ({{ f.short }}){% endif %}</p>
+      {% if f.instrument and f.instrument != "" %}<p class="facility-card__inst">{{ f.instrument }}</p>{% endif %}
+      {% if f.credit and f.credit != "" %}<p class="facility-card__credit">Image: {{ f.credit }}</p>{% endif %}
+    </div>
+  </div>
 {% endfor %}
 </div>
 

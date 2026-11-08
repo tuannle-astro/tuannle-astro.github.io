@@ -1,39 +1,42 @@
 # Mỗi kính là một khối "- name:". Thứ tự ở đây = thứ tự hiện trên trang Research.
-# image: đặt file trong images/facilities/. Để "" thì thẻ hiện chữ thay ảnh.
-# credit: ghi nguồn ảnh (ESO, NASA/ESA... cho phép dùng nếu ghi credit).
+# name:       tên đầy đủ (dòng đậm)
+# short:      tên viết tắt, hiện trong ngoặc sau tên. Để "" nếu không cần.
+# instrument: thiết bị / chế độ quan sát, hiện ở dòng dưới (nhạt hơn).
+# image:      file trong images/facilities/. Để "" thì thẻ hiện chữ thay ảnh.
+# credit:     nguồn ảnh. Để "" thì không hiện dòng "Image:".
 
-- name: "JWST"
+- name: "James Webb Space Telescope"
+  short: "JWST"
   instrument: "NIRSpec IFU · NIRCam"
-  note: "Near-infrared integral-field spectroscopy and imaging"
   image: "jwst.jpg"
   credit: ""
 
-- name: "HST"
-  instrument: "WFC3"
-  note: "High-resolution imaging for stellar mass models"
+- name: "Hubble Space Telescope"
+  short: "HST"
+  instrument: "Archival imaging"
   image: "hst.jpg"
   credit: ""
 
-- name: "Keck"
-  instrument: "OSIRIS + LGS-AO"
-  note: "Adaptive-optics integral-field spectroscopy"
+- name: "W. M. Keck Observatory"
+  short: ""
+  instrument: "OSIRIS (LGS-AO)"
   image: "keck.jpg"
   credit: ""
 
-- name: "VLT"
+- name: "Very Large Telescope"
+  short: "VLT"
   instrument: "MUSE"
-  note: "Optical integral-field spectroscopy"
   image: "vlt.jpg"
   credit: ""
 
-- name: "ALMA"
-  instrument: "CO(2–1)"
-  note: "Molecular-gas kinematics"
+- name: "Atacama Large Millimeter/submillimeter Array"
+  short: "ALMA"
+  instrument: "Band 6"
   image: "alma.jpg"
   credit: ""
 
-- name: "ELT"
+- name: "Extremely Large Telescope"
+  short: "ELT"
   instrument: "HARMONI · MICADO (simulated)"
-  note: "Mock observations for the 39-m Extremely Large Telescope"
   image: "elt.jpg"
   credit: ""
